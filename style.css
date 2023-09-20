@@ -1,0 +1,179 @@
+/* Сброс браузерных дефолтных параметров */
+* {
+  margin: 0;
+  font-weight: 200;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+/* Виджет блока с общими данными о рейсе */
+.flight-widget {
+  position: relative;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Для блока со временем и статусом */
+.flight-time-status {
+  display: inline-block;
+  margin: 10px 30px 10px 10px;
+}
+
+.flight-time {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.flight-status {
+  margin-top: 5px;
+  font-weight: normal;
+  color: green;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px;
+  /* box-sizing: border-box; */
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+ /* Для блока с номером рейса и городом */
+.flight-details {
+  display: inline-block;
+  position: absolute;
+  margin: 10px 30px 10px 10px;
+  left: 200px; 
+}
+
+.flight-airline {
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.flight-location {
+  margin-top: 5px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+  
+/* Стили детального блока о рейсе */
+.flight-detail-info {
+  width: 100%;
+  height: 250px;
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0;
+}
+
+/* Отслеживание остатка пути */
+.tracking {
+  height:35%;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+/* Блок с кодом аропорта вылета */
+.code-airport-departFrom {
+  display: inline-block;
+  width: calc(10% - 10px);
+  line-height: 300%;
+  vertical-align: middle;
+}
+
+/* Блок с кодом аропорта прилета */
+.code-airport-landTo {
+  display: inline-block;
+  width: calc(10% - 10px);
+  text-align: right;
+  line-height: 300%;
+  vertical-align: middle;
+}
+
+/* Треккинг пути с иконкой самолета */
+#scale {
+  width: 80%;
+  height: 10px;
+  background-color: #ccc;
+  position: relative;
+  font-size: 0; /* Убираем межстрочное расстояние */
+  display: inline-block;
+  margin: 0 auto 0;
+}
+
+#line {
+  height: 100%;
+  background-color: blue; /* Цвет линии */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#plane {
+  font-size: 16px; /* Размер символа */
+  position: absolute;
+  top: 0; /* Размещаем самолет сверху линии */
+}
+
+/* Стили детального блока вылета */
+.departFrom {
+  height: 60%;
+  display: inline-block;
+  width: 48%;
+  font-size: 16px;
+  border-right: 1px solid gray;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Город и дата вылета */
+.city-date-departure {
+  text-align: center;
+  font-size: 20px;
+  height: 25%;
+}
+
+/* Город и дата прилета */
+.city-date-arrival {
+  text-align: center;
+  font-size: 20px;
+  height: 25%;
+}
+
+/* Стили детального блока прилета */
+.arriveTo {
+  height: 60%;
+  display: inline-block;
+  width: 48%;
+  font-size: 16px;
+  padding: 10px 10px 10px 40px;
+  overflow-y: auto;
+}
+
+/* Стили для талицы с данными о gate, terminal */
+.table-flight-info {
+  font-size: 20px;
+  height: 40%;
+  padding-top: 20px;
+  padding-left: 20px;
+
+}
+
+.left-padding-colomn {
+  padding-left: 35px;
+}
+
+.small-gray-table-header {
+  font-size: 15px;
+  color: gray;
+}
+
+.values-font-size {
+  font-size: 22px;
+  text-align: center;
+}
