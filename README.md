@@ -1,2 +1,2 @@
 # Flights-tracker
-Testing task for deep dive in js. 
+Testing task for flight tracker development using js.
